@@ -15,8 +15,8 @@ production_url: https://ucsb-cs8-w26.github.io
 
 home:
    title: UCSB CMPSC 8
-   url: /w26
-   baseurl: /w26
+   url: /
+   baseurl: /
 
 offerings: []
 offering_links: []

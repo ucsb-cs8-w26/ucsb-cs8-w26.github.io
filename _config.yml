@@ -4,26 +4,26 @@ plugins:
 
 remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme
 
-url: https://ucsb-csw8.github.io
-baseurl: "/w24"
+url: https://ucsb-cs8-w26.github.io
+baseurl: "/"
 
-course: "CMPSCW 8"
-qtr: "W24"
-instructor: "Richert Wang" 
-quarter: "Winter 2024"
-piazza_url: 
+course: "CMPSC 8"
+qtr: "W26"
+instructor: "Maryam Majedi"
+quarter: "Winter 2026"
+piazza_url:
 gauchospace_course_page:
 gradescope_class_url:
 
-github_url: https://github.com/ucsb-csw8/w24
+github_url: https://github.com/ucsb-cs8-w26/ucsb-cs8-w26.github.io
 
 start_week: 1
 start_date: 2024-01-07 00:00:00.00-7:00
 num_weeks: 10
 extra_exam_week: true
 
-cal_dates: >                                                                    
-  [                                                                            
+cal_dates: >
+  [
     {"label":"W24 1st day of instruction", "date":"2024-01-08" },
     {"label":"MLK Jr. Day", "date":"2024-01-15" },
     {"label":"Presidents' Day", "date":"2024-02-19" },
@@ -43,7 +43,7 @@ cal_dates: >
     {"label":"Quiz 5", "date":"2024-03-15" },
     {"label":"Final Exam (12pm - 2pm)", "date":"2024-03-20" },
     {"label":"W24 instruction ends", "date":"2024-03-15" },
-    {"label":"W24 qtr ends", "date":"2024-03-22" }                              
+    {"label":"W24 qtr ends", "date":"2024-03-22" }
   ]
 
 kramdown:
@@ -56,10 +56,10 @@ exclude:
    - _lab/keep
    - _exam/keep
    - _lectures/keep
-   - _info/keep        
+   - _info/keep
 include:
    - _pages
-   
+
 timezone: America/Los_Angeles
 
 collections:
@@ -92,37 +92,37 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: default
-  - 
+  -
     scope:
       path: ""
       type: lectures
     values:
       layout: lecture
-  - 
+  -
     scope:
       path: ""
       type: hwk
     values:
       layout: hwk
-  - 
+  -
     scope:
       path: ""
       type: lab
     values:
       layout: lab
-  - 
+  -
     scope:
       path: ""
       type: labWIP
     values:
       layout: lab
-  - 
+  -
     scope:
       path: ""
       type: exam
     values:
       layout: exam_info
-  - 
+  -
     scope:
       path: ""
       type: info
