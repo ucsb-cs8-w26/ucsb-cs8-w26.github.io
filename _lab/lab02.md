@@ -3,54 +3,83 @@ layout: lab
 num: lab02
 ready: true
 desc: "Python Functions / For Loops"
-assigned: 2024-02-18 11:00:00-7
-due: 2024-02-25 23:59:59-7
+assigned: 2026-02-23 23:59:59-7
+due: 2026-03-15 23:59:59-7
 ---
 
 # Introduction
 
-Your second lab will require you to write Python code in `.py` files and make submissions to Gradescope's autograder. You may choose to work with a partner if you like (but this is not required). **If you choose to work with a partner, please follow the instructions on recording who your partner is (explained below). Both you and your partner MUST make individual submissions on the Gradescope system to receive credit.**
+Your second lab will require you to write Python code in `.py` files and make
+submissions to Gradescope's autograder. You may choose to work with a partner if
+you like (but this is not required). If you choose to work with a partner,
+please follow the instructions on recording who your partner is (explained
+below). Both you and your partner **must** make individual submissions on the
+Gradescope system to receive credit.
 
-As stated in the syllabus, Gradescope labs will only have a 24-hour late window after the deadline. Submissions during the late window period will have an automatic 20% deduction from your assignment. We will only consider the most recent submission.
+As stated in the syllabus, Gradescope labs will only have a 24-hour late window
+after the deadline. Submissions during the late window period will have an
+automatic 20% deduction from your assignment. We will only consider the most
+recent submission.
 
-**Note: In general, it is a good idea that you start all assignments early so you can utilize our office hours and lab sections to seek assistance / ask clarifying questions before the deadline if needed**
+Note: In general, it is a good idea that you start all assignments early so
+you can utilize our office hours and lab sections to seek assistance / ask
+clarifying questions before the deadline if needed
 
 ## Goals for this lab
 
 By the time you have completed this lab, you should have:
-* create and run Python code in IDLE
-* practice various looping concepts (including accumulator patterns)
-* submited your work using the Gradescope system
 
-# Get setup with Gradescope
+* create and run Python code in IDLE,
+* practice various looping concepts (including accumulator patterns), and
+* submitted your work using the Gradescope system.
+
+## Get set up with Gradescope
 
 We will use Gradescope to autograde this lab assignment.
 
-The lab assignment `Lab02` should appear in your Gradescope dashboard in CMPSCW 8. You will need to submit your code for Lab02 there.
+The lab assignment `lab02` should appear in your Gradescope dashboard in
+CMPSC 8. You will need to submit your code for Lab02 there.
 
-# Create your Lab02 directory
+## Create your Lab02 directory
 
-In general, it's important to be organized when working on various assignments. For this lab, my recommendation is to create a `csw8` folder that will contain sub folders for each lab - for this lab, I would recommend creating a `csw8/lab02` folder on your computer where you can save your file. In general, I recommend creating a new folder for each lab assignment.
+In general, it's important to be organized when working on various assignments.
+For this lab, my recommendation is to create a `cs8` folder that will contain
+sub folders for each lab - for this lab, I would recommend creating a
+`cs8/lab02` folder on your computer where you can save your file. In general, I
+recommend creating a new folder for each lab assignment.
 
-# Create a new `lab02.py` file
+In general, it's important to be organized when working on various assignments.
+We recommend to create a `cs8` folder that will contain subfolders for each
+lab - for this lab, you would create a cs8/lab01 folder on your computer where
+you can save your files. Subsequent assignments should be in new subfolders,
+like `cs8/lab02`.
 
-Using the editor of your choice, create a `lab02.py` file in your `lab02` directory. This `lab02.py` file will contain the python code you will submit for this lab assignment. As also stated in the previous lab, the steps of creating this new file with IDLE are:
+## Create a new `lab02.py` file
 
-* Open IDLE on your computer
-* Go to `File` -> `New File`, which will create an untitled file.
-* Save this file by going to `File` -> `Save`, which will prompt you to save this file in a specified location
-	* Name this file `lab02` (assuming the extension will automatically be saved as a `.py` file)
-      * You must use the **exact** same name and casing when creating your file
-	* Save this file under your `csw8/lab02` directory you created for this lab
+Using the editor of your choice, create a `lab02.py` file in your `lab02`
+directory. This `lab02.py` file will contain the Python code you will submit for
+this lab assignment. As also stated in the previous lab, the steps of creating
+this new file with IDLE are:
+
+1. Open IDLE on your computer.
+2. Go to `File` -> `New File`, which will create an untitled file.
+3. Save this file by going to `File` -> `Save`, which will prompt you to save this file in a specified location
+	* Name this file `lab02` (assuming the extension will automatically be saved as a `.py` file).
+      * You must use the **exact** same name and casing when creating your file.
+	* Save this file under your `cs8/lab02` directory you created for this lab.
 
 # Copy the following code template into `lab02.py` and complete the function definitions
 
-We will write five Python functions for this lab. **If you choose to work with a partner, you and your partner must create your own file, and both you and your partner must submit your work separately.**
+We will write five Python functions for this lab. If you choose to work with a
+partner, you and your partner must create your own file, and both you and your
+partner must submit your work separately.
 
-Copy the following code into your `lab02.py` file and complete the function definitions according to the comments. **Type your actual name (and your partner's name if you worked with one) at the top**:
+Copy the following code into your `lab02.py` file and complete the function
+definitions according to the comments. Type your actual name (and your
+partner's name if you worked with one) at the top:
 
 ```python
-# lab02.py, CSW8
+# lab02.py, CS 8
 # [Type your name here]
 # [Type your partner's name here if you worked with someone]
 
@@ -132,7 +161,7 @@ assert removeMultiples(["Python", "is", "awesome"], 5) == ["Python", "is", "awes
 
 def organizeWords(listOfStr):
     ''' Function that takes in a list of strings, and returns a dictionary
-    where the keys are capital characters, and each key's corresponding 
+    where the keys are capital characters, and each key's corresponding
     value is a list containing all strings in listOfStr (in all capital
     letters) that start with the key character in capital letters in the order that they appear in listOfStr.
     * An empty listOfStr should return an empty dictionary
@@ -173,23 +202,44 @@ assert D["C"] == ["CAR", "CAN"]
 assert D["B"] == ["BEE"]
 ```
 
-Several `assert` statements are included after each function definition. Remember, assert statements are a quick way to do simple testing. The goal is to run your code such that these `assert` statements do not produce any errors and your code successfully finishes execution.
+Several `assert` statements are included after each function definition.
+Remember, assert statements are a quick way to do simple testing. The goal is to
+run your code such that these `assert` statements do not produce any errors and
+your code successfully finishes execution.
 
-In Python, statements are executed line-by-line from top to bottom. So if your code has an error and an `assert` statement doesn't pass, then you will see which `assert` statement failed and execution will stop (no other statements after the error will be executed).
+In Python, statements are executed line-by-line from top to bottom. So if your
+code has an error and an `assert` statement doesn't pass, then you will see
+which `assert` statement failed and execution will stop (no other statements
+after the error will be executed).
 
-In order to run your `lab02.py` file in IDLE, go to `Run` -> `Run Module`. This will start the execution of the file you're working on and the output will be displayed in IDLE's Interactive Shell.
+In order to run your `lab02.py` file in IDLE, go to `Run` -> `Run Module`. This
+will start the execution of the file you're working on and the output will be
+displayed in IDLE's Interactive Shell.
 
-Also note that Gradescope may not run your code if all `assert` statements in your file do not pass - in this case, you can comment out the `assert` statements in your code before submitting to Gradescope for partial credit (Gradescope will run its own `assert` statements when autograding your work, and assign points based on what `assert` statements are passing).
+Also note that Gradescope may not run your code if all `assert` statements in
+your file do not pass - in this case, you can comment out the `assert`
+statements in your code before submitting to Gradescope for partial credit
+(Gradescope will run its own `assert` statements when autograding your work, and
+assign points based on what `assert` statements are passing).
 
 # Submitting to Gradescope
 
-The lab assignment `Lab02` should appear in your Gradescope dashboard in CMPSCW 8. If you haven’t submitted anything for this assignment yet, Gradescope will prompt you to upload your files. **Remember, if you worked with a partner, both you and your partner must make separate submissions in order to receive credit.**
+The lab assignment `Lab02` should appear in your Gradescope dashboard in
+CMPSC 8. If you haven’t submitted anything for this assignment yet, Gradescope
+will prompt you to upload your files. Remember, if you worked with a partner,
+both you and your partner **must** make separate submissions in order to receive
+credit.
 
-You either can navigate to your file(s) or "drag-and-drop" them into the "Submit Programming Assignment" window.
+You either can navigate to your file(s) or "drag-and-drop" them into the "Submit
+Programming Assignment" window. If you already submitted something on
+Gradescope, it will take you to their "Autograder Results" page. There is a
+"Resubmit" button on the bottom right that will allow you to update the files
+for your submission.
 
-If you already submitted something on Gradescope, it will take you to their "Autograder Results" page. There is a "Resubmit" button on the bottom right that will allow you to update the files for your submission.
+If everything is correct, you'll see a successful submission passing all of the
+autograder tests.
 
-If everything is correct, you'll see a successful submission passing all of the autograder tests.
-
-If the tests don't pass, you may get some error message that may or may not be obvious at this point. Don't worry - if the tests didn't pass, take a minute to think about what may have caused the error. If your tests didn't pass and you're still not sure why you're getting the error, feel free to ask your TAs or ULAs.
-
+If the tests don’t pass, you may get some error message that may or may not be
+obvious at this point. Don’t worry - if the tests didn’t pass, take a minute to
+think about what may have caused the error, and feel free to ask your TAs or
+ULAs if you are still not sure.

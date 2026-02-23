@@ -1,6 +1,7 @@
 ---
 layout: lab
 num: lab01
+published: false
 ready: true
 desc: "Getting Started, Python Functions"
 assigned: 2024-02-05 11:00:00-7
