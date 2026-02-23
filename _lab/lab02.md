@@ -16,11 +16,6 @@ please follow the instructions on recording who your partner is (explained
 below). Both you and your partner **must** make individual submissions on the
 Gradescope system to receive credit.
 
-As stated in the syllabus, Gradescope labs will only have a 24-hour late window
-after the deadline. Submissions during the late window period will have an
-automatic 20% deduction from your assignment. We will only consider the most
-recent submission.
-
 Note: In general, it is a good idea that you start all assignments early so
 you can utilize our office hours and lab sections to seek assistance / ask
 clarifying questions before the deadline if needed
